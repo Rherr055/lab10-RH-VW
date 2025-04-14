@@ -6,18 +6,18 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-<<<<<<< HEAD
+git add
 import math
-=======
+
 def add(a, b): 
     return a+b
->>>>>>> 7bd16bf78ab6867c8642de7cdadef25daf9e0394
+
 def sub(a, b):
     return a - b
 def mul(a, b):
     return a*b
 def div(a, b):
-<<<<<<< HEAD
+
     try:
         if a == 0:
             raise ZeroDivisionError
@@ -38,7 +38,7 @@ def log(a, b):
         print("Caught ValueError Error:", str((f)))
 def exp(a, b):
     a**b
-=======
+
     assert b != 0, ZeroDivisionError
     return a/b
 def logarithm(a, b):
@@ -46,7 +46,7 @@ def logarithm(a, b):
     assert a != 1, ValueError
     assert b > 0, ValueError
     return math.log(b,a)
->>>>>>> 7bd16bf78ab6867c8642de7cdadef25daf9e0394
+
 
 def exp(a, b):
     return a**b
