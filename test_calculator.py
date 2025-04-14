@@ -27,8 +27,10 @@ class TestCalculator(TestCase):
             div(4,0)
     #     fill in code
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertAlmostEqual(log(2, 2), 1)
+        self.assertAlmostEqual(log(2, 2), 1)
+        self.assertAlmostEqual(log(2, 2), 1)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
