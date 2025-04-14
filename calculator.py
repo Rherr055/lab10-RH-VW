@@ -20,7 +20,7 @@ def subtract(a, b):
 def mul(a, b):
     return a*b
 def div(a, b):
-    if b == 0:
+    if a == 0:
         raise ZeroDivisionError
     return b / a
 def logarithm(a, b):
