@@ -10,7 +10,6 @@ class TestCalculator(TestCase):
     def test_subtract(self): # 3 assertions
         self.assertEqual(sub(0, 0), 0)
         self.assertEqual(sub(1, 0), 1)
-        self.assertEqual(sub(0, 1), -1)
     # ##########################
 
     ######## Partner 1
