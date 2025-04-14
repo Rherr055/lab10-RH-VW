@@ -19,16 +19,14 @@ def div(a, b):
     if a == 0:
         raise ZeroDivisionError
     return b / a
-
-
 def log(a, b):
-    # use math library + raise ValueError a>1 b>0
-    if a<0:
-        raise ValueError("Invalid arguments")
-    if a ==1:
-        raise ValueError("Invalid arguments")
-    if b<0:
-        raise ValueError("Invalid arguments")
+
+    if a <= 0:
+        raise ValueError
+    if a == 1
+        raise ValueError
+    if b <=0:
+        raise ValueError
     return math.log(b, a)
 
 def exp(a, b):

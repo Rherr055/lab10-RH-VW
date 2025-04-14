@@ -23,17 +23,16 @@ class TestCalculator(TestCase):
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
-
-    with self.assertRaises(<INSERT_ERROR_TYPE>):
-        div(4,0)
+        with self.assertRaises(ZeroDivisionError):
+            div(4,0)
     #     fill in code
 
     # def test_logarithm(self): # 3 assertions
     #     fill in code
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
+    def test_log_invalid_base(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            log(0,12)
     # ##########################
     
     ######## Partner 1
