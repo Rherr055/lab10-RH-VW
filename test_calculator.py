@@ -1,12 +1,11 @@
 # https://github.com/Rherr055/lab10-RH-VW
 # Partner 1: Rolando Herrera
 # Partner 2: Val Wehnau
-
-
+import unittest
 from unittest import *
 from calculator import *
 
-class TestCalculator(TestCase):
+class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
         self.assertEqual(add(3,2),5)
