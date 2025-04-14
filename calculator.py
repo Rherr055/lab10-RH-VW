@@ -1,3 +1,7 @@
+# https://github.com/Rherr055/lab10-RH-VW
+# Partner 1: Firstname LastName
+# Partner 2: Val Wehnau
+
 import math
 """
 calculator.py

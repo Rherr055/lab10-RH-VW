@@ -1,3 +1,8 @@
+# https://github.com/Rherr055/lab10-RH-VW
+# Partner 1: Firstname LastName
+# Partner 2: Val Wehnau
+
+
 from unittest import *
 from calculator import *
 
