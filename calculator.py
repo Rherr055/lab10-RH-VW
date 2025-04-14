@@ -1,3 +1,4 @@
+import math
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -5,23 +6,18 @@ calculator.py
 One function per operation, in order.
 """
 # First example
+<<<<<<< HEAD
 import math
-def square_root(a):
-    try:
-        if a<0:
-            raise ZeroDivisionError
-        math.sqrt(a)
-    except ZeroDivisionError as e:
-        print("Caught Zero Division Error:", str(e))
-def hypotenuse(a, b):
-    math.hypot(a,b)
-def add(a, b):
-    a + b
+=======
+def add(a, b): 
+    return a+b
+>>>>>>> 7bd16bf78ab6867c8642de7cdadef25daf9e0394
 def sub(a, b):
-    a - b
+    return a - b
 def mul(a, b):
-    a * b
+    return a*b
 def div(a, b):
+<<<<<<< HEAD
     try:
         if a == 0:
             raise ZeroDivisionError
@@ -42,4 +38,24 @@ def log(a, b):
         print("Caught ValueError Error:", str((f)))
 def exp(a, b):
     a**b
+=======
+    assert b != 0, ZeroDivisionError
+    return a/b
+def logarithm(a, b):
+    assert a >0, ValueError
+    assert a != 1, ValueError
+    assert b > 0, ValueError
+    return math.log(b,a)
+>>>>>>> 7bd16bf78ab6867c8642de7cdadef25daf9e0394
 
+def exp(a, b):
+    return a**b
+def square_root(a):
+    try:
+        if a<0:
+            raise ZeroDivisionError
+        math.sqrt(a)
+    except ZeroDivisionError as e:
+        print("Caught Zero Division Error:", str(e))
+def hypotenuse(a, b):
+    math.hypot(a,b)
