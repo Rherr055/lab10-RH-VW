@@ -23,7 +23,7 @@ def log(a, b):
 
     if a <= 0:
         raise ValueError
-    if a == 1
+    if a == 1:
         raise ValueError
     if b <=0:
         raise ValueError
