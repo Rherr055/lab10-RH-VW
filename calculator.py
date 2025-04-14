@@ -6,7 +6,6 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-git add
 import math
 
 def add(a, b): 
