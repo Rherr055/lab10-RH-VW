@@ -41,4 +41,4 @@ def square_root(a):
     return math.sqrt(a)
 
 def hypotenuse(a, b):
-    math.hypot(a,b)
+    return math.hypot(a,b)
