@@ -14,11 +14,12 @@ class TestCalculator(TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
-
-    # def test_divide(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mul(2,3),6)
+        self.assertEqual(mul(3,3),9)
+        self.assertEqual(mul(10,10),100)
+    def test_divide(self): # 3 assertions
+        fill in code
     # ##########################
 
     ######## Partner 2
