@@ -1,5 +1,5 @@
 # https://github.com/Rherr055/lab10-RH-VW
-# Partner 1: Firstname LastName
+# Partner 1: Rolando Herrera
 # Partner 2: Val Wehnau
 
 
