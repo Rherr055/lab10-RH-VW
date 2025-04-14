@@ -24,7 +24,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(mul(10,10),100)
     def test_divide(self): # 3 assertions
         self.assertEqual(div(3, 3), 1)
-        self.assertEqual(div(1, 10), 10)
+        self.assertEqual(div(.1, 1), 10)
         self.assertEqual(div(5, 35), 7)
     # ##########################
 
@@ -57,7 +57,9 @@ class TestCalculator(unittest.TestCase):
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
             square_root(-1)
+        with self.assertRaises(ValueError):
             square_root(-2)
+        with self.assertRaises(ValueError):
             square_root(-3)
 
     ##########################
