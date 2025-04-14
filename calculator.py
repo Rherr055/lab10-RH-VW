@@ -32,12 +32,9 @@ def exp(a, b):
     return a**b
 
 def square_root(a):
-    try:
-        if a<0:
-            raise ZeroDivisionError
-        math.sqrt(a)
-    except ZeroDivisionError as e:
-        print("Caught Zero Division Error:", str(e))
+    if a<0:
+        raise ValueError
+    return math.sqrt(a)
 
 def hypotenuse(a, b):
     math.hypot(a,b)
