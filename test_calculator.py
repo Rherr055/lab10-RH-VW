@@ -1,13 +1,14 @@
-import unittest
+from unittest import TestCase
 from calculator import *
 
-class TestCalculator(unittest.TestCase):
+class TestCalculator(TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
-
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(3,2),5)
+        self.assertEqual(add(-5, 0), -5)
+        self.assertEqual(add(0, 0), 0)
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(add(0, 0), 0)
     # ##########################
 
     ######## Partner 1
