@@ -6,6 +6,15 @@ One function per operation, in order.
 """
 # First example
 import math
+def square_root(a):
+    try:
+        if a<0:
+            raise ZeroDivisionError
+        math.sqrt(a)
+    except ZeroDivisionError as e:
+        print("Caught Zero Division Error:", str(e))
+def hypotenuse(a, b):
+    math.hypot(a,b)
 def add(a, b):
     a + b
 def sub(a, b):
@@ -14,9 +23,9 @@ def mul(a, b):
     a * b
 def div(a, b):
     try:
-        b / a
         if a == 0:
             raise ZeroDivisionError
+        b / a
     except ZeroDivisionError as e:
         print("Caught Zero Division Error:", str((e)))
 def log(a, b):
