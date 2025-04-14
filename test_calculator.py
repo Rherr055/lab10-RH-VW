@@ -51,14 +51,16 @@ class TestCalculator(TestCase):
             log(0, -5)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertAlmostEqual(hypotenuse())
+        self.assertAlmostEqual(hypotenuse(0,2),2)
+        self.assertAlmostEqual(hypotenuse(2, 0), 2)
+        self.assertAlmostEqual(hypotenuse(0, 0), 0)
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(-1)
+            square_root(-2)
+            square_root(-3)
+
     ##########################
 
 # Do not touch this
