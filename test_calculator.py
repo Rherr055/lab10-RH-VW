@@ -2,7 +2,6 @@
 # Partner 1: Rolando Herrera
 # Partner 2: Val Wehnau
 import unittest
-from unittest import *
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
