@@ -8,7 +8,9 @@ class TestCalculator(TestCase):
         self.assertEqual(add(-5, 0), -5)
         self.assertEqual(add(0, 0), 0)
     def test_subtract(self): # 3 assertions
-        self.assertEqual(add(0, 0), 0)
+        self.assertEqual(sub(0, 0), 0)
+        self.assertEqual(sub(1, 0), 1)
+        self.assertEqual(sub(0, 1), -1)
     # ##########################
 
     ######## Partner 1
@@ -20,10 +22,10 @@ class TestCalculator(TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
+    def test_divide_by_zero(self): # 1 assertion
+
+    with self.assertRaises(<INSERT_ERROR_TYPE>):
+        div(4,0)
     #     fill in code
 
     # def test_logarithm(self): # 3 assertions
